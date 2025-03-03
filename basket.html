@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик покупок | ZARA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>ZARA</h1>
+    <button class="basket">
+        <img src="basket.png" width="50" height="50" alt="Кошик">
+    </button>
+</header>
+
+<nav>
+    <a href="#women">Жінки</a>
+    <a href="#men">Чоловіки</a>
+    <a href="#children">Діти</a>
+    <a href="#news">Новинки</a>
+</nav>
+
+<main>
+    <h2>Ваш кошик</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Загальна сума: 0 грн</p>
+    
+    <h2>Оформлення замовлення</h2>
+    <form id="checkout-form">
+        <input type="text" id="customer-name" placeholder="Ваше ім'я" required>
+        <input type="tel" id="phone-number" placeholder="Номер телефону" required>
+        <select id="delivery-method">
+            <option value="nova_poshta">Нова пошта</option>
+            <option value="ukr_poshta">Укр пошта</option>
+        </select>
+        <button type="submit">Оформити</button>
+    </form>
+
+    
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+          <h4>Компанія</h4>
+          <ul>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Вакансії</a></li>
+            <li><a href="#">Сталий розвиток</a></li>
+            <li><a href="#">Преса</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Допомога</h4>
+          <ul>
+            <li><a href="#">Часті питання</a></li>
+            <li><a href="#">Доставка та повернення</a></li>
+            <li><a href="#">Способи оплати</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-section">
+          <h4>Соціальні мережі</h4>
+          <ul class="socials">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-section">
+          <h4>Підписка на новини</h4>
+          <form>
+            <input type="email" placeholder="Введіть вашу пошту" required>
+            <button type="submit">Підписатися</button>
+          </form>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>© 2025 ZARA. Усі права захищені.</p>
+      </div>
+    
+</footer>   
+
+<script src="script.js"></script>    
+</body>
+</html>
